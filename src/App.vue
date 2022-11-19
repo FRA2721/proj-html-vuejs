@@ -1,54 +1,55 @@
 <!-- developer: Francesco Cimino; -->
-<!-- proj:Phlox: The best business consulting; -->
+<!-- project: Phlox the best business consulting; -->
 
-<!-- script-section -->
+<!-- script section -->
 <script>
 
-// import-macro-components (header-main-footer)
-// import AppHeader from './components/AppHeader.vue';
-// import AppMain from './components/AppMain.vue';
-// import AppFooter from './components/AppFooter.vue';
+// import macro components
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppFooter from './components/AppFooter.vue';
+
 export default{
   components: {
-    // AppHeader,
-    // AppMain,
-    // AppFooter
+    AppHeader,
+    AppMain,
+    AppFooter
   }
 }
 </script>
-<!-- /script-section -->
+<!-- /script section -->
 
 
 
-<!-- template-section -->
+<!-- template section -->
 <template>
 
-    <!-- header-section -->
-    <!-- <header>
-        <AppHeader />
-    </header> -->
-    <!-- /header-section -->
+<!-- header section -->
+  <header>
+    <AppHeader />
+  </header>
+  <!-- /header-section -->
 
-    <!-- main-section -->
-    <!-- <main>
-        <AppMain />
-    </main> -->
-    <!-- /main-section -->
+  <!-- main section -->
+  <main>
+    <AppMain />
+  </main>
+  <!-- /main section -->
 
-    <!-- footer-section -->
-    <!-- <footer>
-        <AppFooter />
-    </footer> -->
-    <!-- /footer-section -->
+  <!-- footer section -->
+  <footer>
+    <AppFooter />
+  </footer>
+  <!-- footer section -->
 
 </template>
-<!-- /template-section -->
+<!-- /template section -->
 
 
 
-<!-- style-section -->
+<!-- style section -->
 <style lang="scss">
 // scss
-// @use "./styles/general.scss" as *;
-</style> -->
-<!-- /style-section -->
+@use "./styles/general.scss" as *;
+</style>
+<!-- /style section -->
