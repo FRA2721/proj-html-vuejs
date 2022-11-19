@@ -1,8 +1,24 @@
 <!-- script section -->
 <script>
+
+// import components
+import AppPhloxNavBar from './AppPhloxNavBar.vue';
+import AppPhloxJumbotron from './AppPhloxJumbotron.vue';
+import { store } from "../store";
+
 export default{
     // name
-    name: "AppHeader"
+    name: "AppHeader",
+    components:{
+        AppPhloxNavBar,
+        AppPhloxJumbotron
+    },
+    data(){
+        return{
+            // store data
+            store
+        }
+    }
 }
 </script>
 <!-- /script section -->
@@ -14,8 +30,12 @@ export default{
 
     <!-- header -->
     <header>
-        <!-- debug -->
-        <h1>header section</h1>
+        <!-- container -->
+        <div class="container">
+            <AppPhloxNavBar :links="store.headerLinksNavBar"/>
+            <AppPhloxJumbotron />
+        </div>
+        <!-- /container -->
     </header>
     <!-- /header -->
 

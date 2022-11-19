@@ -1,0 +1,28 @@
+// import variables
+@use "./partials/variables" as *;
+
+// import bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// general formatting section
+// img formatting section
+img{
+    max-width: 100%;
+}
+
+// list formatting section
+ul{
+    list-style: none;
+}
+
+// anchor formatting section
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+// header formatting section
+header{
+    background: brown;
+    color: $header-links;
+}
