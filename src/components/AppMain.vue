@@ -1,8 +1,14 @@
 <!-- script section -->
 <script>
+import AppConsultants from './AppConsultants.vue';
+
 export default{
     // name
-    name: "AppMain"
+    name: "AppMain",
+
+    components:{
+        AppConsultants
+    }
 }
 </script>
 <!-- /script section -->
@@ -14,8 +20,7 @@ export default{
     
     <!-- main -->
     <main>
-        <!-- debug -->
-        <h2>main section</h2>
+        <AppConsultants />
     </main>
     <!-- /main section -->
 
