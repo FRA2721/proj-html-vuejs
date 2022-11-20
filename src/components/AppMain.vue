@@ -5,18 +5,21 @@ import AppAboutUs from './AppAboutUs.vue';
 import AppProject from './AppProject.vue';
 import AppTestimonial from './AppTestimonial.vue';
 import AppBlog from './AppBlog.vue';
+import AppTalkAboutWork from './AppTalkAboutWork.vue';
 
 export default{
     // name
     name: "AppMain",
 
     components:{
-    AppConsultants,
-    AppAboutUs,
-    AppProject,
-    AppTestimonial,
-    AppBlog
-}
+        AppConsultants,
+        AppAboutUs,
+        AppProject,
+        AppTestimonial,
+        AppBlog,
+        AppTalkAboutWork
+        
+    }
 }
 </script>
 <!-- /script section -->
@@ -33,6 +36,7 @@ export default{
         <AppProject />
         <AppTestimonial />
         <AppBlog />
+        <AppTalkAboutWork />
     </main>
     <!-- /main section -->
 

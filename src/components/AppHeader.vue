@@ -115,6 +115,7 @@ header{
             text-align: center;
             line-height: 50px;
             margin-left: 50px;
+            
             i{
                 color: aqua;
             }
