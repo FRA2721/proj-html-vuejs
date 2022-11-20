@@ -3,6 +3,7 @@
 import AppConsultants from './AppConsultants.vue';
 import AppAboutUs from './AppAboutUs.vue';
 import AppProject from './AppProject.vue';
+import AppTestimonial from './AppTestimonial.vue';
 
 export default{
     // name
@@ -11,7 +12,8 @@ export default{
     components:{
     AppConsultants,
     AppAboutUs,
-    AppProject
+    AppProject,
+    AppTestimonial
 }
 }
 </script>
@@ -27,6 +29,7 @@ export default{
         <AppConsultants />
         <AppAboutUs />
         <AppProject />
+        <AppTestimonial />
     </main>
     <!-- /main section -->
 
