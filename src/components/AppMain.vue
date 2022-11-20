@@ -4,6 +4,7 @@ import AppConsultants from './AppConsultants.vue';
 import AppAboutUs from './AppAboutUs.vue';
 import AppProject from './AppProject.vue';
 import AppTestimonial from './AppTestimonial.vue';
+import AppBlog from './AppBlog.vue';
 
 export default{
     // name
@@ -13,7 +14,8 @@ export default{
     AppConsultants,
     AppAboutUs,
     AppProject,
-    AppTestimonial
+    AppTestimonial,
+    AppBlog
 }
 }
 </script>
@@ -30,6 +32,7 @@ export default{
         <AppAboutUs />
         <AppProject />
         <AppTestimonial />
+        <AppBlog />
     </main>
     <!-- /main section -->
 
