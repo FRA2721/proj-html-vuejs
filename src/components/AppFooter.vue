@@ -1,8 +1,13 @@
 <!-- script section -->
 <script>
+
+import AppFooterTop from './AppFooterTop.vue';
+import AppFooterBottom from './AppFooterBottom.vue';
+
 export default{
     // name
-    name: "AppFooter"
+    name: "AppFooter",
+    components: { AppFooterTop, AppFooterBottom }
 }
 </script>
 <!-- /script section -->
@@ -14,8 +19,8 @@ export default{
 
     <!-- footer -->
     <footer>
-        <!-- debug -->
-        <h3>footer section</h3>
+        <AppFooterTop />
+        <AppFooterBottom />
     </footer>
     <!-- /footer -->
 
