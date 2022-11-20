@@ -3,7 +3,7 @@ import { reactive } from "vue";
 
 // store-data-for-dinamyc-links
 export const store = reactive({
-    headerLinksNavBar: [
+    navigationLinks: [
 
         // link 1 store data:
         {
