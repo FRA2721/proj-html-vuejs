@@ -25,11 +25,11 @@ export default{
 
 section{
     padding: 7rem 0;
+    margin-top: 5rem;
     background-image: url('../assets/imgs/business-people-working-together-on-project-and-B3MZ4TX.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 </style>

@@ -9,25 +9,43 @@ export default{
                 {
                     title: "Vera Duncan",
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid",
-                    link: "oliver-ragfelt-488196-2.jpg"
+                    link: "oliver-ragfelt-488196-2.jpg",
+                    mouse:false
 
                 },
                 
                 {
                     title: "Francesco Cimino",
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid",
-                    link: "oliver-ragfelt-488196-unsplash.jpg"
+                    link: "oliver-ragfelt-488196-unsplash.jpg",
+                    mouse:false
                 },
 
                 {
                     title: "Michael Black",
                     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid",
-                    link: "12679.jpg"
+                    link: "12679.jpg",
+                    mouse:false
                 }
             ]
         }
     },
     methods:{
+
+        changeMouse: function(item){
+            // item.mouse = true;
+            // this.mouse = true;
+            console.log("pippo");
+            console.log(item.title);
+            console.log(item.mouse);
+            item.mouse = true;
+            console.log(item.mouse);
+        },
+
+        deleteMouse: function(item){
+            item.mouse = false;
+        },
+
         getImgsPath: function(url){
             return new URL(url, import.meta.url).href
         }
@@ -43,7 +61,7 @@ export default{
         </div>
 
         <div class="testimonial-list">
-            <div class="testimonial" v-for="(item, index) in testimonialList">
+            <div class="testimonial" v-for="(item, index) in testimonialList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)" :class="item.mouse ? `background-${index + 1}`: ''">
                 <p>{{ item.description }}</p>
                 <h4>{{ item.title }}</h4>
                 <h5>Amazon inc.</h5>
@@ -96,7 +114,9 @@ section{
 
         .testimonial{
             width: 33%;
-            padding: 2rem 3rem;
+            height: 50%;
+            padding: 3.5rem 3rem;
+            border: 10px solid white;
         }
 
         p{
@@ -107,6 +127,28 @@ section{
             margin-bottom: .5rem;
         }
 
+    }
+
+    .testimonial.background-1{
+        background-image: url('../assets/imgs/oliver-ragfelt-488196-2.jpg');
+        object-fit: cover;
+        background-position: center;
+        border: 10px solid black;
+        border-right: 10px solid pink;
+    }
+
+    .testimonial.background-2{
+        background-image: url('../assets/imgs/oliver-ragfelt-488196-unsplash.jpg');
+        object-fit: cover;
+        border: 10px solid black;
+        border-right: 10px solid pink;
+    }
+
+    .testimonial.background-3{
+        background-image: url('../assets/imgs/12679.jpg');
+        object-fit: cover;
+        border: 10px solid black;
+        border-right: 10px solid pink;
     }
         
 }

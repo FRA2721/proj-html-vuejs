@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: blue;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -20,4 +24,10 @@ ul{
     margin-top: 33px;
     padding: .8rem 2rem;
     background-color: aqua;
+    transition-duration: .5s;
+    border: 3px solid transparent;
+}
+
+.btn:hover{
+    border: 3px solid  yellow;
 }

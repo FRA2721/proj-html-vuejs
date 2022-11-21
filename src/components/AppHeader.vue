@@ -61,6 +61,7 @@ nav{
             padding: 1rem;
             color: $header-text;
             opacity: .5;
+            border-top: 3px solid transparent;
             transition-duration: .5s;
 
             &:hover{

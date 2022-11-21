@@ -13,6 +13,37 @@ export default{
         }
     },
     methods:{
+
+        getImgsPositionRight: function(){
+            const result = new Array(3);
+
+            for (let i = this.cardsList.length - 1; i > -1; i--){
+                if (i === 0){
+                     result[result.length - 1] = this.cardsList[i];
+                }else {
+                    result[i - 1] = this.cardsList[i];
+                }
+            }
+            // console.log("array start",this.cardsList);
+            // console.log("end array", result);
+            this.cardsList = result;
+        },
+
+        getImgsPositionLeft: function(){
+            const result = new Array(3);
+
+            for (let i = 0; i < this.cardsList.length; i++){
+                if(i === this.cardsList.length - 1){
+                    result[0] = this.cardsList[this.cardsList.length - 1];
+                }else {
+                    result[i + 1] = this.cardsList[i];
+                }
+            }
+            // console.log(result);
+            // console.log(this.cardsList);
+            this.cardsList = result;
+        },
+
         getImgsPath: function(url){
             return new URL(url, import.meta.url).href
         }
@@ -28,8 +59,8 @@ export default{
             <div class="move-slider">
                 <h3>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h3>
                 <ul>
-                    <li><i class="fa-solid fa-arrow-left-long"></i></li>
-                    <li><i class="fa-solid fa-arrow-right"></i></li>
+                    <li @click="getImgsPositionLeft"><i class="fa-solid fa-arrow-left-long"></i></li>
+                    <li @click="getImgsPositionRight"><i class="fa-solid fa-arrow-right"></i></li>
                 </ul>
             </div>
 
