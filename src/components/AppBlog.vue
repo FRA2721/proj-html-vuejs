@@ -48,8 +48,6 @@ export default{
 @use '../styles/partials/variables' as *;
 
 section{
-    background-color: blue;
-
     .blog{
         width: 80%;
         margin: 0 auto;

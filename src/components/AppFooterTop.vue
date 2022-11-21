@@ -78,7 +78,6 @@ export default{
 @use '../styles/partials/variables' as *;
 
 section{
-    background-color: blue;
 
     .footer-top{
         width: 90%;
@@ -96,7 +95,7 @@ section{
                 opacity: .5;
                 transition-duration: .5s;
                 padding-bottom: 1rem;
-                border-bottom: 3px solid blue;
+                border-bottom: 3px solid #1f1e38;
 
                 &:hover{
                     opacity: 1;

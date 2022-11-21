@@ -74,7 +74,6 @@ export default{
 @use '../styles/partials/variables' as *;
 
 section{
-    background-color: blue;
     .testimonial-title{
         width: 80%;
         margin: 0 auto;

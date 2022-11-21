@@ -31,8 +31,6 @@ export default{
 @use '../styles/partials/variables' as *;
 
 section{
-    background-color: blue;
-
     .footer-bottom{
         width: 90%;
         padding: 4rem;

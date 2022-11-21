@@ -6,9 +6,20 @@ export default{
     data(){
         return{
             cardsList:[
-                "DRY-1-790x592.jpg",
-                "221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg", 
-                "z1el4c4p-790x592.jpg"
+                {
+                    src: "DRY-1-790x592.jpg",
+                    mouse: false
+                },
+
+                {
+                    src: "221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg",
+                    mouse: false
+                },
+
+                {
+                    src: "z1el4c4p-790x592.jpg",
+                    mouse: false
+                }
             ]
         }
     },
@@ -44,6 +55,14 @@ export default{
             this.cardsList = result;
         },
 
+        changeMouse: function(item){
+            item.mouse = true;
+        },
+
+        deleteMouse: function(item){
+            item.mouse = false;
+        },
+
         getImgsPath: function(url){
             return new URL(url, import.meta.url).href
         }
@@ -65,8 +84,16 @@ export default{
             </div>
 
             <div class="slider">
-                <div class="card" v-for="(item, index) in cardsList">
-                    <img :src="getImgsPath(`../assets/imgs/${item}`)" alt="">
+                <div class="card" v-for="(item, index) in cardsList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)">
+                    <img :src="getImgsPath(`../assets/imgs/${item.src}`)" alt="">
+
+                    <div class="card-text" :class="!item.mouse ? 'none': ''">
+                        <div class="text">
+                            <h3>Purinky Products</h3>
+                            <p>uncategorized</p>
+                        </div>
+                        <a href=""><i class="fa-solid fa-plus"></i></a>
+                    </div>
                 </div>
             </div> 
         </div>
@@ -76,9 +103,6 @@ export default{
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-section{
-    background-color: blue;
-}
 .project{
     width: 80%;
     margin: 0 auto;
@@ -124,8 +148,41 @@ section{
         justify-content: space-between;
         margin-top: 2rem;
 
-        img{
-            width: 380px;
+        .card{
+            position: relative;
+
+            img{
+                width: 380px;
+            }
+            .card-text{
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0px;
+                bottom: 0px;
+                background-color: rgba(255, 0, 0, .6);
+                align-items: end;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+
+                a{
+                    display: inline;
+                    width: 30px;
+                    height: 30px;
+                    background-color: grey;
+                    color: white;
+                    margin-right: 1rem;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+
+            .card-text.none{
+                visibility: hidden;
+            }
+
         }
     }
 

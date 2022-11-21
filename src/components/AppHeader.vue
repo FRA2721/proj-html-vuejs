@@ -19,6 +19,7 @@ export default{
 
 <template>
     <header>
+        <img src="../assets/imgs/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="" class="background-img">
         <nav class="nav-bar">
             <div class="logo">
                 <img src="../assets/imgs/logotype.png" alt="Phlox logo image">
@@ -82,10 +83,17 @@ nav{
 }
 
 header{
-    background: linear-gradient( 
-        to right,
-        blue 30%, 
-        red 10%);
+    
+    .background-img{
+        position: absolute;
+        width: 70%;
+        height: 670px;
+        max-height: 100%;
+        object-fit: cover;
+        top: 0px;
+        right: 0px;
+        z-index: -999;
+    }
 }
 .jumbotron{
     padding: 10rem 0;

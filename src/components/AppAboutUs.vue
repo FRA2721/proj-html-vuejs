@@ -48,9 +48,6 @@ export default{
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.prova{
-    background-color: blue;
-}
 .about-us-section{
 
     display: flex;
@@ -72,7 +69,6 @@ export default{
         justify-content: center;
         width: 50%;
         padding-left: 6rem;
-        background-color: blue;
 
         .container-text{
             width: 50%;
