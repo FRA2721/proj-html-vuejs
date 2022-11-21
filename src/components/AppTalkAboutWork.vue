@@ -15,7 +15,7 @@ export default{
     <section>
         <h2>LET'S TALK ABOUT WORK</h2>
         <p>Francesco Cimino classe 73 BOOLEAN, test for paragraph section.. bla bla bla bla...</p>
-        <a href="#" class="btn get-started-btn">GET STARTED</a>
+        <a href="#" class="btn get-started-btn grey-btn">GET STARTED</a>
     </section>
 </template>
 
@@ -31,5 +31,6 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $text;
 }
 </style>

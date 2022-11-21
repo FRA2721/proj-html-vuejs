@@ -1,3 +1,4 @@
+@use "partials/variables" as *;
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css"; 
 
 *{
@@ -23,11 +24,30 @@ ul{
     display: inline-block;
     margin-top: 33px;
     padding: .8rem 2rem;
-    background-color: aqua;
     transition-duration: .5s;
     border: 3px solid transparent;
 }
 
 .btn:hover{
-    border: 3px solid  yellow;
+    border: 3px solid  $border-btn;
+}
+
+.green-btn{
+    background-color: #39ffbf;
+}
+
+.red-btn{
+    background-color: #f00e2e;
+}
+
+.grey-btn{
+    background-color: #1f1e38;
+}
+
+.pseudo::before{
+    background-color: #39ffbf;
+}
+
+.pseudo::after{
+    background-color: #39ffbf;
 }

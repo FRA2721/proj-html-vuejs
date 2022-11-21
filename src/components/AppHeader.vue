@@ -34,9 +34,9 @@ export default{
     
         <div class="jumbotron">
             <div class="jumbotron-container">
-                <h3>ALWATS THE BEST WAY YOU NEED IT</h3>
+                <h3 class="pseudo">ALWATS THE BEST WAY YOU NEED IT</h3>
                 <h1>THE BEST<br>BUSINESS<br>CONSULTING</h1>
-                <a href="#" class="btn read-more-btn">READ MORE</a>
+                <a href="#" class="btn read-more-btn green-btn">READ MORE</a>
                 <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a>
             </div>
         </div>
@@ -60,7 +60,7 @@ nav{
 
         li{
             padding: 1rem;
-            color: $header-text;
+            color: $text;
             opacity: .5;
             border-top: 3px solid transparent;
             transition-duration: .5s;
@@ -98,6 +98,10 @@ header{
 .jumbotron{
     padding: 10rem 0;
     
+    h3, h1{
+        color: $text;
+    }
+    
     .jumbotron-container{
         width: 80%;
         margin: 0 auto;
@@ -107,7 +111,6 @@ header{
             display: inline-block;
             width: 33px;
             height: 3px;
-            background-color: green;
             margin-right: 10px;
         }
 
@@ -126,7 +129,7 @@ header{
             margin-left: 50px;
             
             i{
-                color: aqua;
+                color: #39ffbf;
             }
         }
     }

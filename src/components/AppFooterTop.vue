@@ -78,7 +78,6 @@ export default{
 @use '../styles/partials/variables' as *;
 
 section{
-
     .footer-top{
         width: 90%;
         margin: 0 auto;

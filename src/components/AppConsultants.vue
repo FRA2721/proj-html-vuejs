@@ -18,7 +18,7 @@ export default{
 
 <template>
     <section>
-        <h2>OUR CONSULTANTS CAN HELP YOU</h2>
+        <h2 class="pseudo">OUR CONSULTANTS CAN HELP YOU</h2>
         <div class="container">
             <div class="box" v-for="(item, index) in store.consultansLinks">
                 <div class="icon">
@@ -57,7 +57,6 @@ section{
             display: inline-block;
             width: calc(100% - 720px);
             height: 3px;
-            background-color: green;
             margin-left: 10px;
         }
     }
@@ -78,17 +77,18 @@ section{
                 display: inline-block;
                 width: 50px;
                 height: 50px;
-                border: 1px solid black;
                 border-radius: 50%;
                 line-height: 50px;
                 text-align: center;
-                background-color: red;
+                background-color: $icon-consultants-color;
+                color: white;
             }
             .description{   
                 padding: 0 20px;
     
                 p{
                     margin-top: 20px;
+                    color: #aaaaaa;
                 }
             }
         }

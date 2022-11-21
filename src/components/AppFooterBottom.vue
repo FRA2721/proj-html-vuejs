@@ -32,11 +32,12 @@ export default{
 
 section{
     .footer-bottom{
-        width: 90%;
-        padding: 4rem;
+        width: 83%;
+        padding: 3rem 0;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        border-top: 3px solid rgb(156, 156, 156);
     }
 
     .copyright{
@@ -56,6 +57,22 @@ section{
             text-align: center;
             margin-left: 10px;
         }
+
+        .fa-message{
+            background-color: #527ceb;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-left: 10px;
+        }
+    }
+
+    p{
+        color: $text;
+        opacity: .5;
     }
 }
 

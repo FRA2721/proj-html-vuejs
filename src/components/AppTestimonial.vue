@@ -56,7 +56,7 @@ export default{
 <template>
     <section>
         <div class="testimonial-title">
-            <h2>TESTIMONIAL</h2>
+            <h2 class="pseudo">TESTIMONIAL</h2>
             <h3>WHAT'S THE CUSTOMER SAY<br> ABOUT OUR WORK</h3>
         </div>
 
@@ -88,7 +88,6 @@ section{
                 display: inline-block;
                 width: 33px;
                 height: 3px;
-                background-color: green;
                 margin-right: 10px;
                 position: absolute;
                 right: 0px;
@@ -99,6 +98,10 @@ section{
         h3{
             text-align: right;
             font-size: 3rem;
+        }
+
+        h2, h3{
+            color: $text;
         }
 
     }
@@ -116,14 +119,20 @@ section{
             height: 50%;
             padding: 3.5rem 3rem;
             border: 10px solid white;
+            transition-duration: 1s;
         }
 
         p{
             margin-bottom: 2rem;
+            color: $paragraph;
         }
 
         h4{
             margin-bottom: .5rem;
+        }
+
+        h5{
+            color: #aaaaaa;
         }
 
     }
@@ -132,22 +141,37 @@ section{
         background-image: url('../assets/imgs/oliver-ragfelt-488196-2.jpg');
         object-fit: cover;
         background-position: center;
-        border: 10px solid black;
-        border-right: 10px solid pink;
+        border: 10px solid rgb(201, 189, 189);
+        border-right: 10px solid white;
+        background-position: bottom;
+
+        &:hover{
+            background-position: center;
+        }
     }
 
     .testimonial.background-2{
         background-image: url('../assets/imgs/oliver-ragfelt-488196-unsplash.jpg');
         object-fit: cover;
-        border: 10px solid black;
-        border-right: 10px solid pink;
+        border: 10px solid rgb(201, 189, 189);
+        border-right: 10px solid white;
+        background-position: bottom;
+
+        &:hover{
+            background-position: center;
+        }
     }
 
     .testimonial.background-3{
         background-image: url('../assets/imgs/12679.jpg');
         object-fit: cover;
-        border: 10px solid black;
-        border-right: 10px solid pink;
+        border: 10px solid rgb(201, 189, 189);
+        border-right: 10px solid white;
+        background-position: bottom;
+        
+        &:hover{
+            background-position: center;
+        }
     }
         
 }

@@ -23,7 +23,7 @@ export default{
     
             <div class="about-us-text">
                 <div class="container-text">
-                    <h2>ABOUT US</h2>
+                    <h2 class="pseudo">ABOUT US</h2>
                     <h3>WE MAKE YOUR STRATEGY WORK</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid</p>
                 </div>
@@ -31,12 +31,12 @@ export default{
             
         </section>
     
-        <section class="help-section">
+        <section class="help-section green-btn">
             <div class="help">
                 <h2>WE HELP TO DELIVER THE BUSINESS CASE</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid</p>
             </div>
-            <a href="#" class="btn get-started-btn">GET STARTED</a>
+            <a href="#" class="btn get-started-btn red-btn">GET STARTED</a>
         </section>
     </div>
 
@@ -74,8 +74,17 @@ export default{
             width: 50%;
         }
 
+        h2{
+            color: $text;
+        }
+
         h3{
             padding: 1.5rem 0;
+            color: $text;
+        }
+
+        p{
+            color: $paragraph;
         }
 
         h2::before{
@@ -83,7 +92,6 @@ export default{
             display: inline-block;
             width: 33px;
             height: 3px;
-            background-color: green;
             margin-right: 10px;
         }
     }
@@ -91,8 +99,6 @@ export default{
 }
 
 .help-section{
-
-    background-color: yellow;
     position: relative;
     width: 90%;
 
@@ -100,6 +106,7 @@ export default{
         position: absolute;
         bottom: 0px;
         right: 0px;
+        color: $text;
     }
     .help{
         width: 60%;

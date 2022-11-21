@@ -22,11 +22,11 @@ export default{
 <template>
     <section>
         <div class="blog">
-            <h2>BLOG</h2>
+            <h2 class="pseudo">BLOG</h2>
 
             <div class="blog-title">
                 <h3>THE RECENT NEWS YOU MUST READ IT</h3>
-                <a href="#" class="btn view-all-btn">VIEW-ALL</a>
+                <a href="#" class="btn view-all-btn green-btn">VIEW-ALL</a>
             </div>
 
             <div class="blog-cards">
@@ -58,19 +58,23 @@ section{
             display: inline-block;
             width: 33px;
             height: 3px;
-            background-color: green;
             margin-right: 10px;
 
         }
         
         h2{
             padding: 1rem 0 1.5rem 0;
+            color: $text;
         }
         .blog-title{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: .5rem 0 3rem 0 ;
+
+            h3{
+                color: $text;
+            }
 
             .view-all-btn{
                 margin: 0;
@@ -100,6 +104,14 @@ section{
 
                 h4{
                     color: red;
+                }
+
+                h2{
+                    color: black;
+                }
+
+                p{
+                    color: $paragraph;
                 }
             }
         }

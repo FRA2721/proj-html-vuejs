@@ -73,7 +73,7 @@ export default{
 <template>
     <section>
         <div class="project">
-            <h2>PROJECT</h2>
+            <h2 class="pseudo">PROJECT</h2>
 
             <div class="move-slider">
                 <h3>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h3>
@@ -109,13 +109,13 @@ export default{
 
     h2{
         padding: 6rem 0 1.5rem 0;
+        color: $text;
         
         &::before{
             content:"";
             display: inline-block;
             width: 33px;
             height: 3px;
-            background-color: green;
             margin-right: 10px;
         }
 
@@ -125,14 +125,18 @@ export default{
         display: flex;
         justify-content: space-between;
 
+        h3{
+            color: $text;
+        }
+
         ul{
             display: flex;
 
             li{
                 width: 30px;
                 height: 30px;
-                border: 1px solid black;
-                background-color: grey;
+                background-color: #3d3d3d6a;
+                color: white;
                 line-height: 30px;
                 text-align: center;
 
@@ -147,9 +151,15 @@ export default{
         display: flex;
         justify-content: space-between;
         margin-top: 2rem;
-
+        
         .card{
             position: relative;
+            border: 5px solid transparent;
+            transition-duration: 1s;
+
+            &:hover{
+                border: 5px solid white;
+            }
 
             img{
                 width: 380px;
@@ -162,7 +172,7 @@ export default{
                 width: 100%;
                 top: 0px;
                 bottom: 0px;
-                background-color: rgba(255, 0, 0, .6);
+                background-color: rgba(148, 5, 5, 0.6);
                 align-items: end;
                 padding-left: 1rem;
                 padding-bottom: 1rem;
@@ -171,11 +181,20 @@ export default{
                     display: inline;
                     width: 30px;
                     height: 30px;
-                    background-color: grey;
+                    background-color: #1f1e38;
                     color: white;
                     margin-right: 1rem;
                     line-height: 30px;
                     text-align: center;
+                }
+
+                h3{
+                    color: $text;
+                }
+
+                p{
+                    color: $paragraph;
+                    opacity: .5 ;
                 }
             }
 
