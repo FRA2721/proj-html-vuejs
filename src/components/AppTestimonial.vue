@@ -128,7 +128,7 @@ section{
         // h3 tipography
         h3{
             text-align: right;
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         // h2, h3 tipography

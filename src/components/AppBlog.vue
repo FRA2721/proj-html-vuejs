@@ -119,6 +119,7 @@ section{
             // h3 tipography
             h3{
                 color: $text;
+                font-size: 2rem;
             }
 
             // view all formatting section

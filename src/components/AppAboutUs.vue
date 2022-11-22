@@ -124,6 +124,7 @@ export default{
         h3{
             padding: 1.5rem 0;
             color: $text;
+            font-size: 2rem;
         }
 
         // p

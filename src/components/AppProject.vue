@@ -93,7 +93,7 @@ export default{
 
             <!-- move slider block -->
             <div class="move-slider">
-                <h3>OUR EXPERT TRUSTED CONSULTANTS HELP CLIENTS</h3>
+                <h3>OUR EXPERT TRUSTED CONSULTANTS<br>HELP CLIENTS</h3>
                 <ul>
                     <li @click="getImgsPositionLeft"><i class="fa-solid fa-arrow-left-long"></i></li>
                     <li @click="getImgsPositionRight"><i class="fa-solid fa-arrow-right"></i></li>
@@ -168,6 +168,7 @@ export default{
         // h3 tipography
         h3{
             color: $text;
+            font-size: 2rem;
         }
 
         // list formatting section
