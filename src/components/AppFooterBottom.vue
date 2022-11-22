@@ -1,6 +1,8 @@
+<!-- script section -->
 <script>
 
 export default{
+    // name
     name: "AppFooterBottom",
 
     data(){
@@ -9,28 +11,51 @@ export default{
     }
 }
 </script>
+<!-- /script section -->
 
+
+
+<!-- template section -->
 <template>
+    <!-- section -->
     <section>
+
+        <!-- footer bottom -->
         <div class="footer-bottom">
+
+            <!-- terms -->
             <div class="terms">
                 <p>Terms of use</p>
                 <p>Privacy Environment Policy</p>
             </div>
+            <!-- /terms -->
 
+            <!-- copyright -->
             <div class="copyright">
                 <p>Copyright @ 2020 Phlox Consulting. All Rights Reserved.</p>
                 <i class="fa-solid fa-arrow-up"></i>
                 <i class="fa-regular fa-message"></i>
             </div>
-        </div>
-    </section>
-</template>
+            <!-- /copyright -->
 
+        </div>
+        <!-- /footer bottom -->
+
+    </section>
+    <!-- /section -->
+</template>
+<!-- /template section -->
+
+
+
+<!-- style section -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+// section formatting
 section{
+
+    // footer bottom formatting section
     .footer-bottom{
         width: 83%;
         padding: 3rem 0;
@@ -40,13 +65,17 @@ section{
         border-top: 3px solid rgb(156, 156, 156);
     }
 
+    // copyright formatting section
     .copyright{
         display: flex;
         align-items: center;
 
+        // icons formatting section
         i{
             display: inline-block;
         }
+
+        // arrow up formatting section
         .fa-arrow-up{
             background-color: white;
             border: 1px solid black;
@@ -58,6 +87,7 @@ section{
             margin-left: 10px;
         }
 
+        // message formatting gsection
         .fa-message{
             background-color: #527ceb;
             color: white;
@@ -70,6 +100,7 @@ section{
         }
     }
 
+    // p
     p{
         color: $text;
         opacity: .5;
@@ -77,3 +108,4 @@ section{
 }
 
 </style>
+<!-- /style section -->

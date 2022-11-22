@@ -1,6 +1,7 @@
 <!-- script section -->
 <script>
 
+// import footer App components 
 import AppFooterTop from './AppFooterTop.vue';
 import AppFooterBottom from './AppFooterBottom.vue';
 

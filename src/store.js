@@ -1,47 +1,44 @@
-// store-code-data
+// store data code
 import { reactive } from "vue";
 
-// store-data-for-dinamyc-links
+// // store data for dinamycs links
 export const store = reactive({
+
+    // navigation links header section store data
     navigationLinks: [
 
-        // link 1 store data:
         {
             voice: "HOME",
             href: "#home"
         },
 
-        // link 2 store data:
         {
             voice: "ABOUT",
             href: "#about"
         },
 
-        // link 3 store data:
         {
             voice: "PROJECTS",
             href: "#projects"
         },
 
-        // link 4 store data:
         {
             voice: "SERVICES",
             href: "#services"
         },
 
-        // link 5 store data:
         {
             voice: "BLOG",
             href: "#blog"
         },
 
-        // link 6 store data:
         {
             voice: "CONTACT",
             href: "#contact"
         }
     ],
 
+    // consultans links section store data
     consultansLinks:[
 
         {
@@ -53,7 +50,7 @@ export const store = reactive({
         {
             title: "DIGITAL CONSULTING",
             subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid.",
-            icon:"fa-regular fa-volume-high"
+            icon: "fa-solid fa-bullhorn"
         },
         
         {
@@ -65,7 +62,7 @@ export const store = reactive({
         {
             title:"ENTERPRICE CONSULTING",
             subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid.",
-            icon: "fa-regular fa-bullseye"
+            icon: "fa-solid fa-bullseye"
         }
 
     ]

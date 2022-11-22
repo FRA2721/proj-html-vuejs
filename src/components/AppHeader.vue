@@ -1,4 +1,7 @@
+<!-- script section  -->
 <script>
+
+// import store data code
 import { store } from '../store.js'
 
 export default{
@@ -12,52 +15,75 @@ export default{
         }
     }
 }
-
 </script>
+<!-- /script section -->
 
 
 
+<!-- tempalte section -->
 <template>
+    <!-- header section -->
     <header>
-        <img src="../assets/imgs/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="" class="background-img">
+        <img src="../assets/imgs/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="consulting people" class="background-img">
+        
+        <!-- nav bar menu -->
         <nav class="nav-bar">
+
+            <!-- logo -->
             <div class="logo">
                 <img src="../assets/imgs/logotype.png" alt="Phlox logo image">
             </div>
+            <!-- /logo -->
             
+            <!-- links -->
             <ul>
                 <li v-for="( item, index ) in store.navigationLinks">
                     <a :href="item.href">{{ item.voice }}</a>
                 </li>
             </ul>
+            <!-- /links -->
+
         </nav>
+        <!-- /nav bar menu -->
     
+        <!-- jumbotron section -->
         <div class="jumbotron">
+
+            <!-- jumbotron container -->
             <div class="jumbotron-container">
                 <h3 class="pseudo">ALWATS THE BEST WAY YOU NEED IT</h3>
                 <h1>THE BEST<br>BUSINESS<br>CONSULTING</h1>
                 <a href="#" class="btn read-more-btn green-btn">READ MORE</a>
                 <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a>
             </div>
+            <!-- /jumbotron container -->
+
         </div>
+        <!-- /jumbotron section -->
+
     </header>
-
+    <!-- /header section -->
 </template>
+<!-- /tempalte section -->
 
 
 
+<!-- style section -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+// nav formatting section
 nav{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 80%;
 
+    // list formatting section
     ul{
         display: flex;
 
+        // list items
         li{
             padding: 1rem;
             color: $text;
@@ -72,9 +98,11 @@ nav{
         }
     }
 
+    // logo formatting section
     .logo{
         padding: 1rem;
 
+        // img formatting section
         img{
             width: 100px;
         }
@@ -82,8 +110,10 @@ nav{
 
 }
 
+// header formatting section
 header{
     
+    // background image formatting section
     .background-img{
         position: absolute;
         width: 70%;
@@ -95,17 +125,22 @@ header{
         z-index: -999;
     }
 }
+
+// jumbotron formatting section
 .jumbotron{
     padding: 10rem 0;
     
+    // h3, h1 tipography
     h3, h1{
         color: $text;
     }
     
+    // jumbotron container formatting sectionc
     .jumbotron-container{
         width: 80%;
         margin: 0 auto;
 
+        // pseudo
         h3::before{
             content:"";
             display: inline-block;
@@ -114,10 +149,12 @@ header{
             margin-right: 10px;
         }
 
+        // h1 tipography
         h1{
             font-size: 3.5rem;
         }
 
+        // paly botton formatting section
         .play-btn{
             display: inline-block;
             width: 50px;
@@ -128,6 +165,7 @@ header{
             line-height: 50px;
             margin-left: 50px;
             
+            // icon formatting section
             i{
                 color: #39ffbf;
             }
@@ -136,3 +174,4 @@ header{
 }
 
 </style>
+<!-- /style section -->

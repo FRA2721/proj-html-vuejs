@@ -1,53 +1,103 @@
+// use variables
 @use "partials/variables" as *;
+
+// import font awesome
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css"; 
 
+
+
+// general reset
+// all
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
+// body general formatting section
+// body
 body{
     background-color: #1f1e38;
 }
 
+
+
+// anchor general formatting section
+// anchor
 a{
     text-decoration: none;
     color: inherit;
 }
 
+
+
+// list general formatting section
+// unordered list
 ul{
     list-style-type: none;
 }
 
+
+
+// bottons general formatting section
+// botton
 .btn{
     display: inline-block;
     margin-top: 33px;
     padding: .8rem 2rem;
     transition-duration: .5s;
     border: 3px solid transparent;
+    opacity: .8;
 }
 
+// botton hover
 .btn:hover{
     border: 3px solid  $border-btn;
+    opacity: 1;
 }
 
+// green botton
 .green-btn{
     background-color: #39ffbf;
 }
 
+// red botton
 .red-btn{
     background-color: #f00e2e;
 }
 
+// grey botton
 .grey-btn{
     background-color: #1f1e38;
 }
 
+
+
+// pseudo elements general formatting section
+// before pseudo general
 .pseudo::before{
     background-color: #39ffbf;
 }
 
+// after pseudo general
 .pseudo::after{
     background-color: #39ffbf;
+}
+
+
+
+
+// icons general formatting section
+// icons
+i{
+    opacity: .5;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+// icons hover
+i:hover{
+    opacity: 1;
 }

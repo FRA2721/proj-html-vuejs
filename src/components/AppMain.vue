@@ -1,5 +1,7 @@
 <!-- script section -->
 <script>
+
+// import vue App codes
 import AppConsultants from './AppConsultants.vue';
 import AppAboutUs from './AppAboutUs.vue';
 import AppProject from './AppProject.vue';
@@ -42,6 +44,8 @@ export default{
 
 </template>
 <!-- /template section -->
+
+
 
 <!-- style section -->
 <style lang="scss" scoped>

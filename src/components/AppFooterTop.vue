@@ -1,47 +1,46 @@
+<!-- script section -->
 <script>
 
 export default{
+    // naame
     name: "AppFooterTop",
 
     data(){
         return{
+            // array
             footerLinks: [
-                // link 1 store data:
                 {
                     voice: "HOME",
                     href: "#home"
                 },
 
-                // link 2 store data:
                 {
                     voice: "ABOUT",
                     href: "#about"
                 },
 
-                // link 3 store data:
                 {
                     voice: "PROJECTS",
                     href: "#projects"
                 },
 
-                // link 4 store data:
                 {
                     voice: "SERVICES",
                     href: "#services"
                 },
 
-                // link 5 store data:
                 {
                     voice: "BLOG",
                     href: "#blog"
                 },
 
-                // link 6 store data:
                 {
                     voice: "CONTACT",
                     href: "#contact"
                 }
             ],
+
+            // array
             socialIcons: [
                 "fa-brands fa-instagram",
                 "fa-brands fa-linkedin",
@@ -52,31 +51,55 @@ export default{
     }
 }
 </script>
+<!-- /script section -->
 
+
+
+<!-- template section -->
 <template>
+    <!-- section -->
     <section>
+
+        <!-- footer top  -->
         <div class="footer-top">
+
+            <!-- logo -->
             <div class="footer-logo">
                 <img src="../assets/imgs/logotype-2-139x23.png" alt="Phlox footer logo image">
             </div>
+            <!-- /logo -->
+
+            <!-- links -->
             <ul class="links">
                 <li v-for="(item, index) in footerLinks" class="links-voices">
                     <a :href="item.href">{{ item.voice }}</a>
                 </li>
             </ul>
+            <!-- /links -->
 
+            <!-- social -->
             <ul class="social">
                 <li v-for="(item, index) in socialIcons">
                     <a href="#"><i :class="item"></i></a>
                 </li>
             </ul>
-        </div>
-    </section>
-</template>
+            <!-- /social -->
 
+        </div>
+        <!-- /footer top -->
+
+    </section>
+    <!-- /section -->
+</template>
+<!-- /template section -->
+
+
+
+<!-- style section -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+// section formatting
 section{
     .footer-top{
         width: 90%;
@@ -85,9 +108,11 @@ section{
         justify-content: space-between;
         padding: 4rem;
 
+        // list formatting section
         ul{
             display: flex;
             
+            // list items
             li{
                 margin-left: 1rem;
                 color: white;
@@ -102,6 +127,8 @@ section{
 
             }
         }
+
+        // links voices formatting section
         .links-voices{
             transition-duration: .5s;
             
@@ -112,3 +139,4 @@ section{
     }
 }
 </style>
+<!-- /style section -->

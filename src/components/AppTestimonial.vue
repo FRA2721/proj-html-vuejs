@@ -1,10 +1,14 @@
+<!-- script section -->
 <script>
 
 export default{
+
+    // name
     name: "AppTestimonial",
 
     data(){
         return{
+            // array
             testimonialList: [
                 {
                     title: "Vera Duncan",
@@ -30,36 +34,49 @@ export default{
             ]
         }
     },
+    // methods
     methods:{
 
+        // change mouse method
         changeMouse: function(item){
             // item.mouse = true;
             // this.mouse = true;
-            console.log("pippo");
+            console.log("ok");
             console.log(item.title);
             console.log(item.mouse);
             item.mouse = true;
             console.log(item.mouse);
         },
 
+        // delete mouse method
         deleteMouse: function(item){
             item.mouse = false;
         },
 
+        // images path method
         getImgsPath: function(url){
             return new URL(url, import.meta.url).href
         }
     }
 }
 </script>
+<!-- /script section -->
 
+
+
+<!-- tempalte section -->
 <template>
+    <!-- section -->
     <section>
+
+        <!-- testimonial title block -->
         <div class="testimonial-title">
             <h2 class="pseudo">TESTIMONIAL</h2>
             <h3>WHAT'S THE CUSTOMER SAY<br> ABOUT OUR WORK</h3>
         </div>
+        <!-- /testimonial title block -->
 
+        <!-- testimonial list block -->
         <div class="testimonial-list">
             <div class="testimonial" v-for="(item, index) in testimonialList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)" :class="item.mouse ? `background-${index + 1}`: ''">
                 <p>{{ item.description }}</p>
@@ -67,22 +84,34 @@ export default{
                 <h5>Amazon inc.</h5>
             </div>
         </div>
-    </section>
-</template>
+        <!-- /testimonial list block -->
 
+    </section>
+    <!-- /section -->
+</template>
+<!-- /tempalte section -->
+
+
+
+<!-- style -->
 <style lang ="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+// section formatting
 section{
+
+    // testimonial title formatting section
     .testimonial-title{
         width: 80%;
         margin: 0 auto;
     
+        // h2 tipography
         h2{
             text-align: center;
             padding: 6rem 0 1rem 0;
             position: relative;
     
+            // pseudo
             &::after{
                 content:"";
                 display: inline-block;
@@ -95,16 +124,20 @@ section{
             }
         }
     
+        // h3 tipography
         h3{
             text-align: right;
             font-size: 3rem;
         }
 
+        // h2, h3 tipography
         h2, h3{
             color: $text;
         }
 
     }
+
+    // testimonial list formatting section
 
     .testimonial-list{
         background-color: white;
@@ -114,6 +147,7 @@ section{
         margin-top: 1.5rem;
         padding-right: 10rem;
 
+        // testimonial
         .testimonial{
             width: 33%;
             height: 50%;
@@ -122,21 +156,26 @@ section{
             transition-duration: 1s;
         }
 
+        // p
         p{
             margin-bottom: 2rem;
             color: $paragraph;
         }
 
+        // h4 tipography
         h4{
             margin-bottom: .5rem;
         }
 
+        // h5 tipography
         h5{
             color: #aaaaaa;
         }
 
     }
 
+    // testimonial background formatting section
+    // background 1
     .testimonial.background-1{
         background-image: url('../assets/imgs/oliver-ragfelt-488196-2.jpg');
         object-fit: cover;
@@ -150,6 +189,7 @@ section{
         }
     }
 
+    // background 2
     .testimonial.background-2{
         background-image: url('../assets/imgs/oliver-ragfelt-488196-unsplash.jpg');
         object-fit: cover;
@@ -162,6 +202,7 @@ section{
         }
     }
 
+    // background 3
     .testimonial.background-3{
         background-image: url('../assets/imgs/12679.jpg');
         object-fit: cover;
@@ -177,3 +218,4 @@ section{
 }
 
 </style>
+<!-- /style -->
