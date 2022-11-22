@@ -23,14 +23,14 @@ export default{
 <!-- template section -->
 <template>
     <!-- section -->
-    <section>
+    <section data-aos="fade-left" data-aos-easing= "linear" data-aos-duration= "1500">
         <h2 class="pseudo">OUR CONSULTANTS CAN HELP YOU</h2>
 
         <!-- container -->
         <div class="container">
 
             <!-- box -->
-            <div class="box" v-for="(item, index) in store.consultansLinks">
+            <div class="box" v-for="(item, index) in store.consultansLinks" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
                 <!-- icon -->
                 <div class="icon">
@@ -72,6 +72,7 @@ section{
         margin: 0 auto;
         padding: 5rem 0 5rem 0;
         padding-left: 17%;
+        color: #1f1e38;
     
         // pseudo
         &::after{
@@ -116,7 +117,12 @@ section{
             // description formatting section
             .description{   
                 padding: 0 20px;
-    
+
+                // h3 tipography                
+                h3{
+                    color: #1f1e38;
+                }
+                
                 // p
                 p{
                     margin-top: 20px;

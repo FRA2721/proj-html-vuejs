@@ -48,7 +48,7 @@ export default{
         <!-- /about us section -->
     
         <!-- help section -->
-        <section class="help-section green-btn">
+        <section class="help-section green-btn" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
             <!-- help -->
             <div class="help">
@@ -151,15 +151,16 @@ export default{
         width: 60%;
         display: flex;
         margin: 0 auto;
-
-        // p
-        p{
-            width: 60%;
-        }
-
+        
         // h2, p tipography
         h2, p{
             padding: 3rem 2rem;
+            color: #1f1e38;
+        }
+        
+        // p
+        p{
+            width: 60%;
         }
     }
 }

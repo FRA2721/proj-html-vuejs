@@ -23,7 +23,7 @@ export default{
 <!-- tempalte section -->
 <template>
     <!-- header section -->
-    <header>
+    <header data-aos="fade-right" data-aos-easing= "linear" data-aos-duration= "1500">
         <img src="../assets/imgs/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="consulting people" class="background-img">
         
         <!-- nav bar menu -->

@@ -77,7 +77,7 @@ export default{
         <!-- /testimonial title block -->
 
         <!-- testimonial list block -->
-        <div class="testimonial-list">
+        <div class="testimonial-list" data-aos="zoom-in-left" data-aos-duration="3000">
             <div class="testimonial" v-for="(item, index) in testimonialList" @mouseenter="changeMouse(item)" @mouseleave="deleteMouse(item)" :class="item.mouse ? `background-${index + 1}`: ''">
                 <p>{{ item.description }}</p>
                 <h4>{{ item.title }}</h4>
@@ -165,6 +165,7 @@ section{
         // h4 tipography
         h4{
             margin-bottom: .5rem;
+            color: #1f1e38;
         }
 
         // h5 tipography

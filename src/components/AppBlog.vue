@@ -49,10 +49,10 @@ export default{
 
                 <!-- general card -->
                 <div class="card" v-for="(item, index) in blogListCards">
-                    <img :src="getImgsPath(`../assets/imgs/${item}`)" alt="">
+                    <img :src="getImgsPath(`../assets/imgs/${item}`)" alt="people">
 
                     <!-- general card description -->
-                    <div class="description">
+                    <div class="description" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-duration="3000">
                         <h4>July 4, 2019 by Paul</h4>
                         <h2>Canadian Consulting Firm Acquired by UK Giant</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid.</p>
@@ -149,12 +149,12 @@ section{
 
                 // h4 tipography
                 h4{
-                    color: red;
+                    color: #f81d39;
                 }
 
                 // h2 tipography
                 h2{
-                    color: black;
+                    color: #1f1e38;;
                 }
 
                 // p
