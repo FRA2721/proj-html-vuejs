@@ -1,5 +1,6 @@
 <!-- developer: Francesco Cimino; -->
 <!-- project: Phlox the best business consulting; -->
+<!-- App.vue -->
 
 <!-- script section -->
 <script>
