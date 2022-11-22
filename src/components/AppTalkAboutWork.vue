@@ -21,7 +21,7 @@ export default{
     <!-- section -->
     <section>
         <h2>LET'S TALK ABOUT WORK</h2>
-        <p>Francesco Cimino classe 73 BOOLEAN, test for paragraph section.. bla bla bla bla...</p>
+        <p>A Wonderful serenity has taken possession Far far away, behind the world mountains.</p>
         <a href="#" class="btn get-started-btn grey-btn">GET STARTED</a>
     </section>
     <!-- /section -->
@@ -44,6 +44,11 @@ section{
     flex-direction: column;
     align-items: center;
     color: $text;
+
+    // p
+    p{
+        color: $paragraph;
+    }
 }
 </style>
 <!-- /style -->

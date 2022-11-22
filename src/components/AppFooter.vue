@@ -19,7 +19,7 @@ export default{
 <template>
 
     <!-- footer -->
-    <footer>
+    <footer id="contact">
         <AppFooterTop />
         <AppFooterBottom />
     </footer>

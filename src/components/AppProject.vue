@@ -85,7 +85,7 @@ export default{
 <!-- template section -->
 <template>
     <!-- section -->
-    <section>
+    <section id="projects">
 
         <!-- project container -->
         <div class="project">
@@ -199,15 +199,18 @@ export default{
         .card{
             position: relative;
             border: 5px solid transparent;
+            border-radius: 33px;
             transition-duration: 1s;
 
             &:hover{
                 border: 5px solid white;
+                border-radius: 33px;
             }
 
             // images formatting section
             img{
                 width: 380px;
+                border-radius: 33px;
             }
 
             // card text formatting section
@@ -219,10 +222,11 @@ export default{
                 width: 100%;
                 top: 0px;
                 bottom: 0px;
-                background-color: rgba(148, 5, 5, 0.6);
+                background-color: rgb(248, 29, 57, .5);
                 align-items: end;
                 padding-left: 1rem;
                 padding-bottom: 1rem;
+                border-radius: 33px;
 
                 // anchor formatting section 
                 a{

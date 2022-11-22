@@ -22,8 +22,9 @@ export default{
 
 <!-- tempalte section -->
 <template>
+
     <!-- header section -->
-    <header data-aos="fade-right" data-aos-easing= "linear" data-aos-duration= "1500">
+    <header data-aos="fade-right" data-aos-easing= "linear" data-aos-duration= "1500" id="home">
         <img src="../assets/imgs/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="consulting people" class="background-img">
         
         <!-- nav bar menu -->
@@ -117,7 +118,7 @@ header{
     .background-img{
         position: absolute;
         width: 70%;
-        height: 670px;
+        height: 720px;
         max-height: 100%;
         object-fit: cover;
         top: 0px;

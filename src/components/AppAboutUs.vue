@@ -22,7 +22,7 @@ export default{
     <div class="container">
 
         <!-- about us section -->
-        <section class="about-us-section">
+        <section class="about-us-section " id="about">
 
             <!-- img -->
             <div class="about-us">

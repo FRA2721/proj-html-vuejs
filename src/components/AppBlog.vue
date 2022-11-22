@@ -31,7 +31,7 @@ export default{
 <!-- template section -->
 <template>
     <!-- section -->
-    <section>
+    <section id="blog">
 
         <!-- blog -->
         <div class="blog">

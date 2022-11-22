@@ -23,7 +23,7 @@ export default{
 <!-- template section -->
 <template>
     <!-- section -->
-    <section data-aos="fade-left" data-aos-easing= "linear" data-aos-duration= "1500">
+    <section data-aos="fade-left" data-aos-easing= "linear" data-aos-duration= "1500" id="services">
         <h2 class="pseudo">OUR CONSULTANTS CAN HELP YOU</h2>
 
         <!-- container -->
