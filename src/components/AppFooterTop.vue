@@ -65,7 +65,9 @@ export default{
 
             <!-- logo -->
             <div class="footer-logo">
-                <img src="../assets/imgs/logotype-2-139x23.png" alt="Phlox footer logo image">
+                <a href="" id="home">
+                    <img src="../assets/imgs/logotype-2-139x23.png" alt="Phlox footer logo image">
+                </a>
             </div>
             <!-- /logo -->
 

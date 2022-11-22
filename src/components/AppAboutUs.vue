@@ -108,6 +108,7 @@ export default{
         // h2 tipography
         h2{
             color: $text;
+            font-size: .8rem;
 
             // pseudo
             &::before{

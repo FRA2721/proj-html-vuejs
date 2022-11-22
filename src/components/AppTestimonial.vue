@@ -110,6 +110,7 @@ section{
             text-align: center;
             padding: 6rem 0 1rem 0;
             position: relative;
+            font-size: .8rem;
     
             // pseudo
             &::after{

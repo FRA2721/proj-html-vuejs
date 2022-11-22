@@ -147,6 +147,7 @@ export default{
     h2{
         padding: 6rem 0 1.5rem 0;
         color: $text;
+        font-size: .8rem;
         
         // pseudo
         &::before{

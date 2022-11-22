@@ -155,6 +155,11 @@ header{
             font-size: 3.5rem;
         }
 
+        // h3 tipography
+        h3{
+            font-size: .8rem;
+        }
+
         // paly botton formatting section
         .play-btn{
             display: inline-block;

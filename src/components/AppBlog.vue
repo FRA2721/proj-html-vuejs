@@ -88,6 +88,11 @@ section{
         margin: 0 auto;
         padding: 6rem 0 0 0;
 
+        // h2 tipography
+        & > h2{
+            font-size: .8rem;
+        }
+
         // pseudo
         & > h2::before {
             content:"";
