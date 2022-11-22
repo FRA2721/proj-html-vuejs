@@ -222,7 +222,7 @@ export default{
                 width: 100%;
                 top: 0px;
                 bottom: 0px;
-                background-color: rgb(248, 29, 57, .5);
+                background-color: rgb(180, 0, 0, .65);
                 align-items: end;
                 padding-left: 1rem;
                 padding-bottom: 1rem;
@@ -248,7 +248,6 @@ export default{
                 // p
                 p{
                     color: $paragraph;
-                    opacity: .5 ;
                 }
             }
 

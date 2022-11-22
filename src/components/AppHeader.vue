@@ -136,7 +136,7 @@ header{
         color: $text;
     }
     
-    // jumbotron container formatting sectionc
+    // jumbotron container formatting section
     .jumbotron-container{
         width: 80%;
         margin: 0 auto;
@@ -163,7 +163,7 @@ header{
             border: 1.5px solid white;
             border-radius: 50px;
             text-align: center;
-            line-height: 50px;
+            line-height: 45px;
             margin-left: 50px;
             
             // icon formatting section
