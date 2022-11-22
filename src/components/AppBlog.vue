@@ -52,10 +52,10 @@ export default{
                     <img :src="getImgsPath(`../assets/imgs/${item}`)" alt="people">
 
                     <!-- general card description -->
-                    <div class="description" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-duration="3000">
+                    <div class="description" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1500" data-aos-duration="3000">
                         <h4>July 4, 2019 by Paul</h4>
                         <h2>Canadian Consulting Firm Acquired by UK Giant</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid.</p>
+                        <p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow plants are noticed by when i hear the buzz of the title.</p>
                     </div>
                     <!-- /general card description -->
 
@@ -141,7 +141,7 @@ section{
             // description formatting section
             .description{
                 width: 80%;
-                background-color: white;
+                background-color: rgba(255, 255, 255, .8);
                 position: absolute;
                 bottom: -50px;
                 right: 0px;
@@ -159,7 +159,7 @@ section{
 
                 // p
                 p{
-                    color: $paragraph;
+                    color: grey;
                 }
             }
         }

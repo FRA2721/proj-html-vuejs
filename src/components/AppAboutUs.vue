@@ -37,7 +37,7 @@ export default{
                 <div class="container-text">
                     <h2 class="pseudo">ABOUT US</h2>
                     <h3>WE MAKE YOUR STRATEGY WORK</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid</p>
+                    <p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow plants are noticed by when i hear the buzz of the title world among the stalks, and grow familiar indescribable forms of the insects, and flies, then i feel the presence of the Almighty.</p>
                 </div>
                 <!-- /container text -->
 
@@ -53,7 +53,7 @@ export default{
             <!-- help -->
             <div class="help">
                 <h2>WE HELP TO DELIVER THE BUSINESS CASE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, numquam ipsam facere a eligendi dolorum necessitatibus aliquam autem quas expedita. Corrupti, nobis. Corrupti in amet blanditiis quibusdam vel id aliquid</p>
+                <p>When while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknow.</p>
             </div>
             <!-- /help -->
 
