@@ -48,6 +48,7 @@ section{
     // p
     p{
         color: $paragraph;
+        padding-top: 1rem;
     }
 }
 </style>
